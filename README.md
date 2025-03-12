@@ -49,6 +49,5 @@ JSON User Storage:
 
 
 ![mongodb screenshot](https://github.com/user-attachments/assets/b59c343b-6bc4-401a-86ee-9cb38a85dce9)
-![postgrelformjsonsnapshot](https://github.com/user-attachments/assets/0ae11e7e-22ee-4adf-86ee-b6d5466517c0)
 ![TypeScriptPostgrelSQLAuthentication_two](https://github.com/user-attachments/assets/a5424420-ca6f-4c21-85d7-10048d520370)
 ![TypeScriptPostgrelSQLAuthentication](https://github.com/user-attachments/assets/f07ee3d1-23e5-4ec2-ac54-7f283c712ff7)
