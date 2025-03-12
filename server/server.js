@@ -110,12 +110,15 @@ app.use(cors({
 
 
 
+ const renderProduction = process.env === 'production'
+
 const client = new Client({
     user: process.env.PG_USER,
     host: process.env.PG_HOST,
     database: process.env.PG_DATABASE,
     password: process.env.PG_PASSWORD,
-    port: process.env.PG_PORT
+    port: process.env.PG_PORT,
+    ssl: renderProduction ? {rejectUnauthorized: false } : false // Only enable SSL on Render
 });
 client.connect()
 .then(() => console.log('PostgreSQL connected successfully'))
@@ -129,8 +132,8 @@ client.connect()
         user: process.env.PG_USER,
         host: process.env.PG_HOST,
         database: process.env.PG_DATABASE,
-        password: process.env.PG_PASSWORD,
-        port: process.env.PG_PORT
+        port: process.env.PG_PORT,
+        ssl: renderProduction ? "Enabled" : "Disabled"
     });
 
 
