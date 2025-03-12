@@ -1,0 +1,26 @@
+
+
+
+
+
+
+.welcome-container {
+    width: 100%;
+    overflow: hidden;
+    background: url('../images/postgres-logo.png');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.welcome-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 1000px;
+}
